@@ -1,0 +1,75 @@
+{
+	"categories": [
+		{
+			"name": "assets",
+			"blocks": [
+				{
+					"name": "react",
+					"directory": "src/assets",
+					"category": "assets",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"react.svg"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "components",
+			"blocks": [
+				{
+					"name": "ui",
+					"directory": "src/components/ui",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"button.tsx"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"dependencies": [
+						"react@^19.0.0",
+						"@radix-ui/react-slot@^1.1.2",
+						"class-variance-authority@^0.7.1"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"@/lib/utils": "{{lib/utils}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "lib",
+			"blocks": [
+				{
+					"name": "utils",
+					"directory": "src/lib",
+					"category": "lib",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"utils.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"clsx@^2.1.1",
+						"tailwind-merge@^3.0.2"
+					],
+					"devDependencies": []
+				}
+			]
+		}
+	]
+}
